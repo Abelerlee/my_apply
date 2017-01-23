@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*公共部分样式*/
+*{padding:0;margin:0;border-size:content-box; }
+html,body{width:100%;height:100%; overflow: hidden;background:#ccc;}
+/*外壳*/
+#mainbox{height:100%;}
+/*游戏开始画面*/
+.startbox{position:absolute;left:0;top:50px;width:100%;height:100%;z-index:9999;background-color:rgba(0,0,0,1);color:#fff;text-align:center;}
+#start{background:#555;width:100px;height:30px;text-align:center;line-height:30px;margin:30px auto;margin-top:110px;
+    font-size:15px;font-family: "微软雅黑";font-weight:600;color:#fff;box-shadow: 0 0 5px #fff;}
+#start:hover{background:#fff;color:#000;border-radius:3px;box-shadow: 0 0 5px #ccc;}
+.startbox a{background:#555;display:block;width:100px;height:30px;tex t-align:center;line-height:30px;margin:30px auto;
+            font-size:15px;font-family: "微软雅黑";font-weight:600;box-shadow: 0 0 5px #fff;}
+.startbox a:hover{background:#fff;color:#000;border-radius:3px;ox-shadow: 0 0 5px #ccc;}
+/*游戏结束画面*/
+.overbox{display:none;position:absolute;left:0;top:50px;width:100%;height:100%;padding-top:50px;z-index:9999;background-color:rgba(0,0,0,.3) }
+p{text-align:center;color:#000;line-height:50px;}
+.getscore{position:absolute;left:-9999px;top:30px;width:200px;height:50px;border-radius:10px;background:#fff;margin:30px auto;
+    transition: all .5s ease-in-out;
+}
+
+#over{width:200px;height:150px;border-radius:20px;background:#fff;margin:30px auto;}
+#over span{display:block;font-family:'mm' !important;font-weight:600;}
+@font-face {font-family:'mm';src: local('GothicE'), url('gothice_.ttf') format('truetype');}
+#over a{display:block;}
+#over a:hover{color:#00ff00;}
+.golist{width:200px;height:50px;border-radius:10px;background:#fff;margin:30px auto;}
+/*头部样式*/
+.header{position:absolute;left:0;top:0;width:100%;height:50px;background:#A90506;font-size:20px;font-weight:600;color:#fff;line-height:50px;text-align:center;}
+#back{position:absolute;display:block;left:0;top:0;width:10%;height:50px;
+    background:url(../img/back.png) no-repeat left;}
+.title{position:absolute;left:20%;top:0;width:60%;height:50px;}
+#out{position:absolute;right:0;top:0;width:30%;height:50px;
+    background:url(../img/out.png)no-repeat right;}
+/*游戏金币的样式*/
+#gamebox{width:100%;height:360px;background:#666;position:absolute;left:0;top:50px;margin:0 auto;overflow: hidden;}
+.gold{position:absolute;animation:gold 1s linear 0s infinite;background:green;border-radius:50%;}
+@keyframes gold{
+    0% {transform:rotateY(0deg)}
+    25%{transform:rotateY(90deg)}
+    50%{transform:rotateY(180deg)}
+    75%{transform:rotateY(270deg)}
+    100% {transform:rotateY(360deg)}
+}
+.y{background:url(../img/gold.jpg) no-repeat center center;background-size:100%;border-radius: 50%;}
+.w{background:url(../img/slievr.jpg) no-repeat center center;background-size:100%;border-radius: 50%;}
+/*接金币的小车的样式*/
+.car{position:absolute;background:url(../img/cc.jpg) no-repeat center;background-size:100%}
+/*游戏计时*/
+#timebox{position:absolute;left:10%;top:410px;width:80%;height:60px;margin:10px auto;background:#fff;border-radius:10px;
+    font-size:24px;font-weight:600;color:#000;text-align:center;line-height:60px;}
+/*游戏计分*/
+#getcode{position:absolute;left:10%;top:490px;display:inline-block; width:40%;height:50px;background:#1e3958;border-radius:10px 0 0 10px;
+    color:#fff;font-size:18px;font-weight:600;text-align:center;line-height:50px;}
+/*排行榜按钮*/
+#count-list-btn{position:absolute;right:10%;top:490px;width:40%;height:50px; border:none;border-radius:0 10px 10px 0 ;
+    font-size:18px;font-weight:600;text-align:center;line-height:50px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

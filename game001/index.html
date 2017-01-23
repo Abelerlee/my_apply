@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <title>小游戏</title>
+        <link href="css/gold.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="mainbox">
+            <!--游戏开始画面-->
+            <div class="startbox" id="startbox">
+                <p id="start">开始游戏</p>
+                <a>选择难度</a>
+                <a>游戏设置</a>
+                <a>游戏说明</a>
+            </div>
+            <!--&ndash;游戏结束画面-->
+
+            <div class="overbox" id="overbox">
+                <p class="getscore">得分</p>
+                <p id="over">
+                    <span>游戏结束 </span>
+                    <a class="restart">重新开始</a>
+                    <a class="reagain">再来一次</a>
+                </p>
+                <p class="golist">查看排行榜</p>
+            </div>
+            <!--游戏内容头部-->
+            <div class="header">
+                <a href="index.html" id="back"></a>
+                <div class="title">排行榜</div>
+                <div id="out"></div>
+            </div>
+            <!--游戏内容区域-->
+            <div id="gamebox"></div>
+            <div id="timebox"></div>
+            <!--游戏得分与排行榜查看-->
+            <div id="getcode"></div>
+            <button id="count-list-btn" >查看排行榜</button>
+        </div>
+
+        <script src="js/jquery-1.12.3.js"></script>
+        <script src="js/global.js"></script>
+        <script src="js/gold.js"></script>
+        <script src="js/car.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

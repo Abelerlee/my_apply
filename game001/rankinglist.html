@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <title>小游戏</title>
+        <link href="css/rankinglist.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="listbox">
+            <div class="header">
+                <a href="index.html" id="back"></a>
+                <div class="title">排行榜</div>
+                <div id="out"></div>
+            </div>
+            <div class="listname">
+                <div>用户名</div>
+                <div>得分</div>
+                <div>排名</div>
+            </div>
+            <ul id="infolist">
+                <li>
+                    <p class="userid">12321</p>
+                    <p class="score">12321321</p>
+                    <p class="ranking">1243243</p>
+                </li>
+            </ul>
+        </div>
+        <script src="js/jquery-1.12.3.js"></script>
+        <script src="js/global.js"></script>
+        <script>
+            getList();
+            function getList(){
+            /*    $.getJSON("http://datainfo.duapp.com/gamesinfo/catchgolds/rankinglist.php?callback=?",{gname:GlobalPrs.gameName},
+                        function(data){
+                            console.log(data);
+                })*/
+                $.ajax({
+                    url:"http://datainfo.duapp.com/gamesinfo/catchgolds/rankinglist.php",
+                    data:{gname:GlobalPrs.gameName},
+                    dataType:"jsonp",
+                    success:function (data) {
+                        var oData=data;
+                        console.log(oData);
+                        console.log(oData.length);
+                        var inFoList=document.getElementById("infolist");
+                        var str="";
+                        var arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+                        for(var i=0;i<oData.length;i++){
+                            str+= '<li><p class="userid">'+data[i].userID+'</p>'+
+                                    '<p class="score">'+data[i].score+'</p>'+
+                                    '<p class="ranking">'+arr[i]+'</p></li>'
+                        }
+                        inFoList.innerHTML=str;
+                    }
+                })
+            }
+        </script>
+    </body>
+</html>

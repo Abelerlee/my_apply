@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*公共部分样式*/
+*{padding:0;margin:0;}
+html,body{width:100%;height:100%;}
+/*界面样式*/
+#listbox{position:absolute;left:0;top:0;width:320px;background:#ccc;margin:0 auto;}
+/*头部样式*/
+.header{position:absolute;width:100%;height:44px;background:#A90506;font-size:20px;font-weight:600;color:#fff;line-height:44px;text-align:center;}
+#back{position:absolute;display:block;left:0;top:0;width:10%;height:44px;
+    background:url(../img/back.png) no-repeat left;}
+.title{position:absolute;left:20%;top:0;width:60%;height:44px;}
+#out{position:absolute;right:0;top:0;width:30%;height:44px;
+    background:url(../img/out.png)no-repeat right;}
+/*排行榜头部*/
+.listname{position:absolute;left:0;top:44px;width:100%;height:30px;}
+.listname div{float:left;width:33%;height:30px;line-height:30px;text-align:center;}
+/*排行榜样式*/
+#infolist{position:absolute;top:74px;left:0;width:100%;height:300px;}
+#infolist li{display:block;width:97%;height:30px;margin-top:3px;border:1px solid #ccc;padding:10px 5px;background:#f05a50;}
+#infolist li p{float:left;width:33%;height:30px;text-align:center;line-height:30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
