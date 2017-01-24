@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				margin:100px auto;
+				width:400px;
+				height:200px;
+				background:url(../../0517/background/bac.jpg) 0 0 no-repeat;
+			    background-size:400px 200px;
+			    animation:demo 2s linear infinite both;
+			    transform-origin: center center;
+				 
+			}
+			@-webkit-keyframes demo{
+				0%{transform: perspective(1200px) rotateY(0)}
+				100%{transform: perspective(1200px) rotateY(360deg)}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

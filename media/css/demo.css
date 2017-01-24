@@ -1,0 +1,80 @@
+
+@import "base.css";
+
+/*头部*/
+header { height: 44px; display: flex; text-align: center; justify-content: space-around;
+    font-size: 14px; color: #cce; line-height: 44px; position: fixed; width: 100%; background-color: rgba(0,0,0,.7)}
+.logo { font-size: 16px;  width: 20%; }
+.nav-menu { display: none; width: 20%}
+.nav-list { width: 80%}
+.nav-list ul {display: flex;justify-content: space-around; }
+.nav-list li {}
+/*头部*/
+
+/*头部的图片*/
+section {}
+.top-bg {}
+.top-bg img { width: 100%}
+/*头部的图片*/
+
+/*广告*/
+.wrap { margin-top: 10px; display: flex;justify-content: space-around;}
+.first-ad { width: 48%}
+.first-ad img { width: 100%}
+.second-ad {width: 48%;display: flex;justify-content: space-around;}
+.second-ad div {width: 48%;}
+.second-ad img {width: 100%; height: auto}
+/*广告*/
+
+/*内容*/
+.content { margin-top: 10px;}
+.cont-list { display: flex;justify-content: space-around; flex-wrap: wrap}
+.cont-list li { width: 22%; margin: 5px 0; box-shadow: 0 0 6px rgba(0,0,0,.8); padding: 5px; }
+.cont-list .pic {}
+.cont-list .pic p {}
+.cont-list img { width: 100%}
+.cont-list time {}
+.cont-list .info { display: flex; justify-content: space-between}
+.cont-list .info span {}
+/*内容*/
+
+
+/*pc*/
+@media screen and (min-width: 1024px) {
+
+}
+
+/*pad横屏*/
+@media screen and (max-width: 1023px)and (min-width: 760px) {
+    .cont-list li { width: 31%;  }
+}
+
+/*pad*/
+@media screen and (max-width: 759px)and (min-width: 460px) {
+    .cont-list li { width: 48%;  }
+
+    .wrap { flex-wrap: wrap}
+    .first-ad { width: 96%}
+    .second-ad {width: 96%;}
+
+
+    header { height: 44px; display: flex; text-align: center; justify-content: flex-start;
+        font-size: 14px; color: #cce; line-height: 44px; position: fixed; width: 100%; background-color: rgba(0,0,0,.6)}
+    .logo { display: none }
+    .nav-menu { display: block; width: 20%}
+
+    .nav-list {  display: block;width: 100%; position: absolute; left: 0; top: 44px; background-color: rgba(0,0,0,.7)}
+    .nav-list ul {display: block;  }
+    .nav-list li { border-top: 1px solid rgba(255,255,255,.2) }
+
+
+}
+
+/*手机*/
+@media screen and (max-width: 459px) {
+    .cont-list li { width: 96%;  }
+
+    .wrap { flex-wrap: wrap}
+    .first-ad { width: 96%}
+    .second-ad {width: 96%;}
+}
